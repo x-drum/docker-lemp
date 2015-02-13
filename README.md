@@ -14,5 +14,9 @@ A CentOS based image with nginx (official stable package), php5-fpm (from base o
 ## Usage
 
 ```bash
-docker run -ti --rm -p 80:80 -v /path/to/www:/usr/share/nginx/html -v /path/to/mysql:/var/lib/mysql -e MYSQL_PASSWORD=ChangeME xdrum/lemp
+docker run -ti --rm -p 80:80 \
+  -v /path/to/www:/usr/share/nginx/html \
+  -v /path/to/mysql:/var/lib/mysql \
+  -e MYSQL_PASSWORD=ChangeME \
+  xdrum/lemp
 ```
